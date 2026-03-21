@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Igor Sankov | Помощь Игорю Санкову</title>
+    <meta name="description" content="Personal fundraising page for Igor Sankov's rehabilitation. Limb-girdle muscular dystrophy. Donate via Bitcoin, TON, or TRON.">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Help Igor Sankov — Fighting Muscular Dystrophy">
+    <meta property="og:description" content="28-year-old father fighting limb-girdle muscular dystrophy needs rehabilitation to stay mobile. Every contribution matters.">
+    <!-- TODO: Replace with absolute URL after deploy (e.g. https://your-domain.railway.app/photo_2026-03-21 11.58.44.jpeg) -->
+    <meta property="og:image" content="photo_2026-03-21 11.58.44.jpeg">
+    <!-- TODO: Replace with absolute URL after deploy (e.g. https://your-domain.railway.app/) -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Help Igor Sankov — Fighting Muscular Dystrophy">
+    <meta name="twitter:description" content="28-year-old father needs rehabilitation to stay mobile until a cure arrives. Help him stay on his feet.">
+    <!-- TODO: Replace with absolute URL after deploy (e.g. https://your-domain.railway.app/photo_2026-03-21 11.58.44.jpeg) -->
+    <meta name="twitter:image" content="photo_2026-03-21 11.58.44.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232196F3'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>IS</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#hero" class="header__logo" data-i18n="header_name">Igor Sankov</a>
+            <nav class="header__nav">
+                <a href="#about" class="header__link" data-i18n="nav_about">My Story</a>
+                <a href="#diagnosis" class="header__link" data-i18n="nav_diagnosis">Diagnosis</a>
+                <a href="#rehab" class="header__link" data-i18n="nav_rehab">Rehabilitation</a>
+                <a href="#documents" class="header__link" data-i18n="nav_documents">Documents</a>
+                <a href="#contacts" class="header__link" data-i18n="nav_contacts">Contact</a>
+                <a href="#donate" class="header__link header__link--cta" data-i18n="nav_donate">Donate</a>
+            </nav>
+            <div class="header__right">
+                <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+                    <span class="lang-switch__option" data-lang="en">EN</span>
+                    <span class="lang-switch__sep">|</span>
+                    <span class="lang-switch__option" data-lang="ru">RU</span>
+                </button>
+                <button class="header__burger" id="burgerBtn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg" style="background-image: url('photo_2026-03-21 11.58.44.jpeg')"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <h1 class="hero__title" data-i18n="hero_title">Help Igor Stay on His Feet</h1>
+            <p class="hero__subtitle" data-i18n="hero_subtitle">28 years old. Father. Fighting muscular dystrophy. Needs rehabilitation to stay mobile until a cure arrives.</p>
+            <div class="hero__buttons">
+                <a href="#donate" class="btn btn--primary" data-i18n="hero_cta">How to Help</a>
+                <a href="#about" class="btn btn--secondary" data-i18n="hero_cta2">My Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section section--white" id="about">
+        <div class="container">
+            <h2 class="section__title" data-i18n="about_title">My Story</h2>
+            <div class="about__grid">
+                <div class="about__text">
+                    <p data-i18n="about_text">My name is Igor Sankov, I'm 28 years old. I'm married, and together with my wife, we're raising our son Adam, who is 6. Originally from Krasnodar region, I have a degree in management. My family and I have been living in Sochi for over eight years.</p>
+                </div>
+                <div class="about__image">
+                    <img src="photo_2026-03-21 11.58.39.jpeg"
+                         alt="Igor walking with his son Adam at sunset"
+                         data-i18n-alt="about_img_alt"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DIAGNOSIS ========== -->
+    <section class="section section--gray" id="diagnosis">
+        <div class="container">
+            <h2 class="section__title" data-i18n="diagnosis_title">Diagnosis</h2>
+            <div class="about__grid about__grid--reverse">
+                <div class="about__text">
+                    <p data-i18n="diagnosis_text1">About 10 years ago, I was diagnosed with limb-girdle muscular dystrophy (type R9C5) — a form of myopathy caused by a gene defect that disrupts dystrophin production, leading to progressive muscle wasting.</p>
+                    <p data-i18n="diagnosis_text2">Unfortunately, the disease has been progressing: my limbs are weakening, and my heart muscle is affected. Over the past years, I've undergone several rounds of treatment and rehabilitation — they helped maintain my condition and preserve my ability to walk and live an active life.</p>
+                </div>
+                <div class="about__image">
+                    <img src="photo_2026-03-21 11.58.26.jpeg"
+                         alt="Igor in the hospital ward with medical equipment"
+                         data-i18n-alt="diagnosis_img_alt"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REHABILITATION ========== -->
+    <section class="section section--white" id="rehab">
+        <div class="container">
+            <h2 class="section__title" data-i18n="rehab_title">Why Help Is Needed</h2>
+            <div class="rehab__text">
+                <p data-i18n="rehab_text1">I now need extended rehabilitation to maintain my mobility and prepare for the next stage of treatment. In the US, a drug is being approved that can correct the genetic defect and completely stop the disease. To benefit from this treatment, I must keep my muscles in working condition.</p>
+                <p data-i18n="rehab_text2">Suitable rehabilitation centers are located in Croatia, Singapore, and Switzerland.</p>
+            </div>
+
+            <!-- Cost cards -->
+            <div class="cost-cards">
+                <div class="cost-card">
+                    <div class="cost-card__label" data-i18n="cost_6m_label">6-month rehabilitation</div>
+                    <div class="cost-card__value">$100,000 – $115,000</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card__label" data-i18n="cost_12m_label">Annual program</div>
+                    <div class="cost-card__value">~$200,000</div>
+                </div>
+            </div>
+
+            <!-- Photo gallery -->
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="photo_2026-03-21 11.58.25.jpeg"
+                         alt="Igor standing in a robotic exoskeleton, smiling"
+                         data-i18n-alt="rehab_img1_alt"
+                         loading="lazy">
+                    <span class="gallery__caption" data-i18n="rehab_img1_cap">In a robotic exoskeleton during rehabilitation</span>
+                </div>
+                <div class="gallery__item">
+                    <img src="photo_2026-03-21 11.58.27.jpeg"
+                         alt="Igor on a medical bed during a procedure, smiling"
+                         data-i18n-alt="rehab_img2_alt"
+                         loading="lazy">
+                    <span class="gallery__caption" data-i18n="rehab_img2_cap">Rehabilitation procedure</span>
+                </div>
+                <div class="gallery__item">
+                    <img src="photo_2026-03-21 11.58.40.jpeg"
+                         alt="Igor on rehabilitation equipment with suspension system"
+                         data-i18n-alt="rehab_img3_alt"
+                         loading="lazy">
+                    <span class="gallery__caption" data-i18n="rehab_img3_cap">Training on suspension system</span>
+                </div>
+                <div class="gallery__item">
+                    <img src="photo_2026-03-21 11.58.41.jpeg"
+                         alt="Igor on rehabilitation equipment showing peace sign"
+                         data-i18n-alt="rehab_img4_alt"
+                         loading="lazy">
+                    <span class="gallery__caption" data-i18n="rehab_img4_cap">Staying positive during rehab</span>
+                </div>
+            </div>
+
+            <!-- Video gallery -->
+            <div class="video-gallery">
+                <div class="video-gallery__item">
+                    <video controls preload="metadata" playsinline>
+                        <source src="IMG_4930.MP4" type="video/mp4">
+                        <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
+                    </video>
+                    <span class="gallery__caption" data-i18n="rehab_vid1_cap">Rehabilitation session</span>
+                </div>
+                <div class="video-gallery__item">
+                    <video controls preload="metadata" playsinline>
+                        <!-- MOV format: use video/quicktime. Convert to MP4 with ffmpeg for wider compatibility -->
+                        <source src="IMG_5792.MOV" type="video/quicktime">
+                        <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
+                    </video>
+                    <span class="gallery__caption" data-i18n="rehab_vid2_cap">Rehabilitation exercises</span>
+                </div>
+                <div class="video-gallery__item">
+                    <video controls preload="metadata" playsinline>
+                        <source src="IMG_9649.MP4" type="video/mp4">
+                        <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
+                    </video>
+                    <span class="gallery__caption" data-i18n="rehab_vid3_cap">Rehabilitation progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOCUMENTS ========== -->
+    <!-- NOTE: Passport photos (photo_...36, photo_...38) and disability certificate (photo_...29)
+         contain sensitive personal data that needs to be blurred before production deployment.
+         Specifically: passport numbers, subdivision codes, MRZ strips, residential address.
+         This blurring will be done in a separate processing step. -->
+    <section class="section section--gray" id="documents">
+        <div class="container">
+            <h2 class="section__title" data-i18n="docs_title">Supporting Documents</h2>
+            <p class="section__subtitle" data-i18n="docs_subtitle">Click on a document to view it in full size.</p>
+            <div class="docs-grid">
+                <div class="docs-card" data-lightbox="photo_2026-03-21 11.58.29.jpeg">
+                    <img src="photo_2026-03-21 11.58.29.jpeg"
+                         alt="Disability certificate"
+                         data-i18n-alt="doc1_alt"
+                         loading="lazy">
+                    <span class="docs-card__label" data-i18n="doc1_label">Disability Certificate</span>
+                </div>
+                <div class="docs-card" data-lightbox="photo_2026-03-21 11.58.30.jpeg">
+                    <img src="photo_2026-03-21 11.58.30.jpeg"
+                         alt="Medical report"
+                         data-i18n-alt="doc2_alt"
+                         loading="lazy">
+                    <span class="docs-card__label" data-i18n="doc2_label">Medical Report</span>
+                </div>
+                <div class="docs-card" data-lightbox="photo_2026-03-21 11.58.34.jpeg">
+                    <img src="photo_2026-03-21 11.58.34.jpeg"
+                         alt="Discharge summary"
+                         data-i18n-alt="doc3_alt"
+                         loading="lazy">
+                    <span class="docs-card__label" data-i18n="doc3_label">Discharge Summary</span>
+                </div>
+                <div class="docs-card" data-lightbox="photo_2026-03-21 11.58.36.jpeg">
+                    <img src="photo_2026-03-21 11.58.36.jpeg"
+                         alt="Passport (identity verification)"
+                         data-i18n-alt="doc4_alt"
+                         loading="lazy">
+                    <span class="docs-card__label" data-i18n="doc4_label">Passport (Identity Verification)</span>
+                </div>
+                <div class="docs-card" data-lightbox="photo_2026-03-21 11.58.38.jpeg">
+                    <img src="photo_2026-03-21 11.58.38.jpeg"
+                         alt="International passport"
+                         data-i18n-alt="doc5_alt"
+                         loading="lazy">
+                    <span class="docs-card__label" data-i18n="doc5_label">International Passport</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DONATE ========== -->
+    <section class="section section--accent" id="donate">
+        <div class="container">
+            <h2 class="section__title" data-i18n="donate_title">How You Can Help</h2>
+            <p class="section__subtitle" data-i18n="donate_subtitle">Any support — financial or informational — gives me a chance to live fully and raise my son.</p>
+
+            <div class="crypto-cards">
+                <!-- BTC -->
+                <div class="crypto-card">
+                    <div class="crypto-card__header">
+                        <svg class="crypto-card__icon" viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="16" fill="#F7931A"/><path d="M22.5 14.2c.3-2-1.2-3.1-3.3-3.8l.7-2.7-1.7-.4-.7 2.6c-.4-.1-.9-.2-1.4-.3l.7-2.7-1.7-.4-.7 2.7c-.4-.1-.7-.2-1-.2l-2.3-.6-.4 1.8s1.2.3 1.2.3c.7.2.8.6.8 1l-.8 3.2c0 0 .1 0 .1 0l-.1 0-1.1 4.5c-.1.2-.3.5-.7.4 0 0-1.2-.3-1.2-.3l-.8 1.9 2.2.5c.4.1.8.2 1.2.3l-.7 2.8 1.7.4.7-2.7c.5.1.9.2 1.4.3l-.7 2.7 1.7.4.7-2.8c2.9.5 5.1.3 6-2.3.7-2.1 0-3.3-1.6-4.1 1.1-.3 2-1 2.2-2.5zm-3.9 5.5c-.5 2.1-4.1 1-5.3.7l.9-3.8c1.2.3 4.9.9 4.4 3.1zm.5-5.5c-.5 1.9-3.5.9-4.4.7l.8-3.4c1 .2 4.1.7 3.6 2.7z" fill="#fff"/></svg>
+                        <span class="crypto-card__name">Bitcoin (BTC)</span>
+                    </div>
+                    <div class="crypto-card__address-row">
+                        <code class="crypto-card__address" id="addr-btc">3D8VqbtrFJvCijUMFXQT9sSiSg5KHkBb73</code>
+                        <button class="crypto-card__copy" data-copy="3D8VqbtrFJvCijUMFXQT9sSiSg5KHkBb73" aria-label="Copy BTC address">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            <span data-i18n="copy_btn">Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TON -->
+                <div class="crypto-card">
+                    <div class="crypto-card__header">
+                        <svg class="crypto-card__icon" viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="16" fill="#0098EA"/><path d="M10.8 10.4h10.4c1 0 1.7.5 2.1 1.2.4.7.4 1.6-.1 2.4L17 24.3c-.3.4-.6.5-1 .5s-.7-.1-1-.5L8.8 14c-.5-.8-.5-1.7-.1-2.4.4-.7 1.1-1.2 2.1-1.2zm4.3 2.3v8.1l-4.5-6.7c-.2-.3-.2-.5-.1-.8.1-.2.3-.4.7-.4h3.9v-.2zm1.8 0v.2h3.9c.4 0 .6.2.7.4.1.3.1.5-.1.8l-4.5 6.7v-8.1z" fill="#fff"/></svg>
+                        <span class="crypto-card__name">TON</span>
+                    </div>
+                    <div class="crypto-card__address-row">
+                        <code class="crypto-card__address" id="addr-ton">UQDLyrVzIJvvxa_93HpurmGZ-ssXjeB9YnVlUbZwrJx02Ih-</code>
+                        <button class="crypto-card__copy" data-copy="UQDLyrVzIJvvxa_93HpurmGZ-ssXjeB9YnVlUbZwrJx02Ih-" aria-label="Copy TON address">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            <span data-i18n="copy_btn">Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TRX -->
+                <div class="crypto-card">
+                    <div class="crypto-card__header">
+                        <svg class="crypto-card__icon" viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="16" fill="#EF0027"/><path d="M9 8.5l14 3.5-9.5 13L9 8.5zm2.2 2.4l2.3 9.1 6.3-8.7-8.6-.4zm3.6 1.3l5.2.3-3.8 5.3-1.4-5.6z" fill="#fff"/></svg>
+                        <span class="crypto-card__name">TRON (TRX)</span>
+                    </div>
+                    <div class="crypto-card__address-row">
+                        <code class="crypto-card__address" id="addr-trx">TPA4BQ2QBHq5hQnzwANqUGS7u9sW48oBBe</code>
+                        <button class="crypto-card__copy" data-copy="TPA4BQ2QBHq5hQnzwANqUGS7u9sW48oBBe" aria-label="Copy TRX address">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            <span data-i18n="copy_btn">Copy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="donate__share-text" data-i18n="donate_share_text">You can also help by sharing this page.</p>
+
+            <div class="share-buttons">
+                <a class="share-btn share-btn--twitter" id="shareTwitter" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on X/Twitter">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <span data-i18n="share_twitter">Share on X</span>
+                </a>
+                <a class="share-btn share-btn--telegram" id="shareTelegram" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on Telegram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <span data-i18n="share_telegram">Telegram</span>
+                </a>
+                <a class="share-btn share-btn--whatsapp" id="shareWhatsApp" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span data-i18n="share_whatsapp">WhatsApp</span>
+                </a>
+                <button class="share-btn share-btn--link" id="shareCopyLink" aria-label="Copy link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    <span data-i18n="share_copy_link">Copy Link</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTS ========== -->
+    <section class="section section--white" id="contacts">
+        <div class="container">
+            <h2 class="section__title" data-i18n="contacts_title">Contact</h2>
+            <div class="contacts-grid">
+                <a href="https://t.me/people001" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <svg class="contact-card__icon" viewBox="0 0 24 24" width="36" height="36" fill="#0098EA"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <span class="contact-card__name">Telegram</span>
+                    <span class="contact-card__handle">@people001</span>
+                </a>
+                <a href="https://www.instagram.com/igor_sankov" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <svg class="contact-card__icon" viewBox="0 0 24 24" width="36" height="36" fill="#E4405F"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 1 1-2.882 0 1.441 1.441 0 0 1 2.882 0z"/></svg>
+                    <span class="contact-card__name">Instagram</span>
+                    <span class="contact-card__handle">@igor_sankov</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">&copy; <span id="currentYear">2026</span> Igor Sankov</p>
+            <a href="#hero" class="footer__top" data-i18n="footer_top">Back to top</a>
+            <p class="footer__disclaimer" data-i18n="footer_disclaimer">This is a personal fundraising page, not affiliated with any organization.</p>
+        </div>
+    </footer>
+
+    <!-- ========== LIGHTBOX ========== -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+        <img class="lightbox__img" id="lightboxImg" src="" alt="">
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+    </div>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <nav class="mobile-menu__nav">
+            <a href="#about" class="mobile-menu__link" data-i18n="nav_about">My Story</a>
+            <a href="#diagnosis" class="mobile-menu__link" data-i18n="nav_diagnosis">Diagnosis</a>
+            <a href="#rehab" class="mobile-menu__link" data-i18n="nav_rehab">Rehabilitation</a>
+            <a href="#documents" class="mobile-menu__link" data-i18n="nav_documents">Documents</a>
+            <a href="#donate" class="mobile-menu__link" data-i18n="nav_donate">Donate</a>
+            <a href="#contacts" class="mobile-menu__link" data-i18n="nav_contacts">Contact</a>
+        </nav>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
