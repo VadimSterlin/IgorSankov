@@ -175,10 +175,6 @@ function detectLanguage() {
     if (saved && translations[saved]) {
         return saved;
     }
-    var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    if (browserLang.startsWith('ru')) {
-        return 'ru';
-    }
     return 'en';
 }
 
