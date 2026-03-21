@@ -9,7 +9,7 @@ const translations = {
         nav_diagnosis: 'Diagnosis',
         nav_rehab: 'Rehabilitation',
         nav_documents: 'Documents',
-        nav_donate: 'Donate',
+        nav_donate: 'How to Help',
         nav_contacts: 'Contact',
 
         // Hero
@@ -63,7 +63,7 @@ const translations = {
         doc5_alt: 'International passport',
 
         // Donate
-        donate_title: 'How You Can Help',
+        donate_title: 'How to Help (Payment Details)',
         donate_subtitle: 'Any support — financial or informational — gives me a chance to live fully and raise my son.',
         copy_btn: 'Copy',
         copy_done: 'Copied!',
@@ -142,7 +142,7 @@ const translations = {
         doc5_alt: 'Загранпаспорт',
 
         // Donate
-        donate_title: 'Как помочь',
+        donate_title: 'Как помочь (реквизиты)',
         donate_subtitle: 'Любая помощь — материальная или информационная — даст мне шанс жить полноценно и растить сына.',
         copy_btn: 'Скопировать',
         copy_done: 'Скопировано!',
