@@ -510,6 +510,7 @@ button {
     width: 100%;
     max-height: 400px;
     display: block;
+    background: #F8F9FA;
 }
 
 .video-gallery__item .gallery__caption {

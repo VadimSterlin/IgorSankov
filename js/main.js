@@ -413,11 +413,14 @@ function initLightbox() {
    ============================================== */
 function updateShareLinks() {
     var pageUrl = window.location.href;
-    var shareText = 'Help Igor Sankov fight muscular dystrophy. Every share matters.';
+    var shareText = currentLang === 'ru'
+        ? 'Помогите Игорю Санкову в борьбе с мышечной дистрофией. Каждый репост важен.'
+        : 'Help Igor Sankov fight muscular dystrophy. Every share matters.';
+    var twitterShareText = shareText + ' \ud83e\udd1d';
 
     var twitterBtn = document.getElementById('shareTwitter');
     if (twitterBtn) {
-        twitterBtn.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(pageUrl);
+        twitterBtn.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(twitterShareText) + '&url=' + encodeURIComponent(pageUrl);
     }
 
     var telegramBtn = document.getElementById('shareTelegram');
