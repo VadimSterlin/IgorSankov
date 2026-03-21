@@ -59,6 +59,9 @@
         </div>
     </header>
 
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+
     <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
         <div class="hero__bg" style="background-image: url('photo_2026-03-21 11.58.44.jpeg')"></div>
@@ -166,23 +169,21 @@
             <!-- Video gallery -->
             <div class="video-gallery">
                 <div class="video-gallery__item">
-                    <video controls preload="none" playsinline>
+                    <video controls preload="metadata" playsinline>
                         <source src="IMG_4930.MP4" type="video/mp4">
                         <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
                     </video>
                     <span class="gallery__caption" data-i18n="rehab_vid1_cap">Rehabilitation session</span>
                 </div>
-                <!-- TODO: Convert IMG_5792.MOV to MP4 for cross-browser compatibility -->
                 <div class="video-gallery__item">
-                    <video controls preload="none" playsinline>
-                        <source src="IMG_5792.MOV" type="video/quicktime">
-                        <source src="IMG_5792.mp4" type="video/mp4">
+                    <video controls preload="metadata" playsinline>
+                        <source src="IMG_5792.MOV" type="video/mp4">
                         <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
                     </video>
                     <span class="gallery__caption" data-i18n="rehab_vid2_cap">Rehabilitation exercises</span>
                 </div>
                 <div class="video-gallery__item">
-                    <video controls preload="none" playsinline>
+                    <video controls preload="metadata" playsinline>
                         <source src="IMG_9649.MP4" type="video/mp4">
                         <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
                     </video>
@@ -336,6 +337,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="container footer__inner">
@@ -348,7 +351,9 @@
     <!-- ========== LIGHTBOX ========== -->
     <div class="lightbox" id="lightbox" aria-hidden="true">
         <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
         <img class="lightbox__img" id="lightboxImg" src="" alt="">
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#8250;</button>
     </div>
 
     <!-- ========== MOBILE MENU ========== -->

@@ -48,6 +48,11 @@ button {
     font-size: inherit;
 }
 
+:focus-visible {
+    outline: 2px solid #2196F3;
+    outline-offset: 2px;
+}
+
 /* =============================================
    UTILITIES
    ============================================= */
@@ -143,7 +148,7 @@ button {
     background: #F8F9FA;
     font-size: 13px;
     font-weight: 600;
-    color: #666;
+    color: #555;
 }
 
 .lang-switch__option {
@@ -488,7 +493,7 @@ button {
     padding: 8px 10px;
     font-size: 13px;
     font-style: italic;
-    color: #666;
+    color: #555;
     background: #FAFAFA;
 }
 
@@ -596,8 +601,36 @@ button {
     opacity: 0.7;
 }
 
+.lightbox__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    font-size: 48px;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 2001;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s, opacity 0.2s;
+}
+
+.lightbox__nav:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.lightbox__nav--prev {
+    left: 16px;
+}
+
+.lightbox__nav--next {
+    right: 16px;
+}
+
 .lightbox__img {
-    max-width: 90vw;
+    max-width: 80vw;
     max-height: 90vh;
     border-radius: 8px;
     object-fit: contain;
@@ -815,7 +848,7 @@ button {
 
 .footer__disclaimer {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.65);
     max-width: 500px;
 }
 
@@ -925,6 +958,10 @@ button {
    RESPONSIVE: 1024px+
    ============================================= */
 @media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
     .hero__title {
         font-size: 48px;
     }
