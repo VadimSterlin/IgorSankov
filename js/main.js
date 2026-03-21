@@ -554,6 +554,27 @@ document.addEventListener('DOMContentLoaded', function() {
     currentLang = detectLanguage();
     setLanguage(currentLang);
 
+    // Fix OG meta tags with absolute URLs
+    var origin = window.location.origin;
+    var ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage && ogImage.content && !ogImage.content.startsWith('http')) {
+        ogImage.content = origin + '/' + ogImage.content;
+    }
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) {
+        ogUrl.content = window.location.href;
+    }
+    var twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage && twitterImage.content && !twitterImage.content.startsWith('http')) {
+        twitterImage.content = origin + '/' + twitterImage.content;
+    }
+
+    // Dynamic year in footer
+    var yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
     // Initialize all features
     initStickyHeader();
     initMobileMenu();

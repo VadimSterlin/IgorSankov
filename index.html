@@ -177,7 +177,8 @@
                 </div>
                 <div class="video-gallery__item">
                     <video controls preload="metadata" playsinline>
-                        <source src="IMG_5792.MOV" type="video/mp4">
+                        <!-- MOV format: use video/quicktime. Convert to MP4 with ffmpeg for wider compatibility -->
+                        <source src="IMG_5792.MOV" type="video/quicktime">
                         <span data-i18n="video_unsupported">Your browser does not support the video tag.</span>
                     </video>
                     <span class="gallery__caption" data-i18n="rehab_vid2_cap">Rehabilitation exercises</span>
@@ -342,7 +343,7 @@
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="container footer__inner">
-            <p class="footer__copy">&copy; 2026 Igor Sankov</p>
+            <p class="footer__copy">&copy; <span id="currentYear">2026</span> Igor Sankov</p>
             <a href="#hero" class="footer__top" data-i18n="footer_top">Back to top</a>
             <p class="footer__disclaimer" data-i18n="footer_disclaimer">This is a personal fundraising page, not affiliated with any organization.</p>
         </div>
